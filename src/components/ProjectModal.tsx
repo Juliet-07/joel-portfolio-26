@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import type { Project } from "@/data/portfolio";
-import { X, Clock, Users, Layers, CheckCircle2 } from "lucide-react";
+import { X, Clock, Users, Triangle, CheckCircle2 } from "lucide-react";
 
 interface ProjectModalProps {
   project: Project;
@@ -35,7 +35,7 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
             <div className="flex flex-wrap gap-4 text-xs text-primary-foreground/60 font-body">
               <span className="flex items-center gap-1.5"><Clock size={13} />{project.duration}</span>
               <span className="flex items-center gap-1.5"><Users size={13} />{project.teamSize}</span>
-              <span className="flex items-center gap-1.5"><Layers size={13} />{project.deliveryModel}</span>
+              <span className="flex items-center gap-1.5"><Triangle size={13} className="fill-current" />{project.deliveryModel}</span>
             </div>
             <p className="text-sm text-primary-foreground/50 font-body mt-3">{project.role}</p>
           </div>
