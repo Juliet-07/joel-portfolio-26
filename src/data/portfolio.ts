@@ -1,11 +1,11 @@
 export interface Project {
   id: string;
   name: string;
-  industry: "Technology" | "Oil & Energy" | "Operations";
+  industry: "Technology" | "Oil & Energy" | "Operations" | "Technology / Operations";
   role: string;
   duration: string;
   teamSize: string;
-  deliveryModel: "Agile" | "Hybrid" | "Waterfall";
+  deliveryModel: "Agile" | "Hybrid" | "Waterfall" | "Scrum";
   overview: string;
   objective: string;
   challenges: string[];
@@ -148,6 +148,70 @@ export const projects: Project[] = [
       "Unplanned shutdowns reduced by 65%",
       "Full regulatory compliance achieved",
       "Annual maintenance cost savings of $800K",
+    ],
+  },
+  {
+    id: "kujua360-lms",
+    name: "Kujua360 – Pandemic Awareness & Certification LMS",
+    industry: "Technology / Operations",
+    role: "Scrum Master",
+    duration: "3 months",
+    teamSize: "Cross-functional team",
+    deliveryModel: "Scrum",
+    overview:
+      "A learning management platform designed to help users across Africa take structured courses and earn certifications in pandemic awareness and response.",
+    objective:
+      "Deliver a structured LMS enabling pandemic awareness education and certification across African regions, with clear learning outcomes and scalable course delivery.",
+    challenges: [
+      "Coordinating rapid feature delivery and quality assurance for an education platform intended for broad regional use",
+      "Ensuring clarity around learning outcomes and certification requirements",
+      "Balancing speed of delivery with platform reliability for diverse user base",
+    ],
+    responsibility:
+      "Facilitated sprint ceremonies, backlog refinement, and stakeholder alignment sessions to ensure learning requirements, certification flows, and platform features were clearly understood and prioritized.",
+    approach:
+      "Scrum-based delivery with focused sprints on high-impact learning and user experience outcomes. Actively removed blockers and strengthened communication between technical and non-technical stakeholders.",
+    stakeholderStrategy:
+      "Ensured sprint goals remained focused on high-impact learning outcomes through regular alignment sessions between the delivery team and education stakeholders.",
+    riskManagement:
+      "Proactive blocker identification and removal. Maintained close feedback loops with QA to ensure certification flows met acceptance criteria before release.",
+    tools: ["Jira", "Slack", "Confluence", "Figma"],
+    outcomes: [
+      "First release delivered according to client's definition of done and acceptance criteria",
+      "Innovafemme retained on retainership for continuous product support",
+      "Joel continues to support the team as Scrum Master",
+    ],
+  },
+  {
+    id: "abh-ecommerce",
+    name: "ABH Markets – Multi-vendor E-commerce Platform",
+    industry: "Technology / Operations",
+    role: "Scrum Master",
+    duration: "18 months",
+    teamSize: "Cross-functional team",
+    deliveryModel: "Scrum",
+    overview:
+      "A multi-vendor e-commerce platform designed to facilitate trade within Nigeria, enabling both local buyers and sellers to transact seamlessly, while also allowing Chinese vendors to sell directly into the Nigerian market.",
+    objective:
+      "Build and deliver a robust multi-vendor marketplace connecting Nigerian buyers, local sellers, and international (Chinese) vendors on a single platform.",
+    challenges: [
+      "Major communication gap between the development team and the Product Owner who joined after delivery had begun",
+      "Misalignment around priorities, feature expectations, and delivery direction",
+      "Translating evolving business expectations into clear, actionable backlog items",
+    ],
+    responsibility:
+      "Re-established structured communication between the Product Owner and delivery team through sprint reviews, backlog refinement sessions, and targeted alignment meetings.",
+    approach:
+      "Scrum-based delivery with emphasis on bridging the PO-team communication gap. Helped translate business expectations into clear backlog items and reinforced shared understanding of scope and priorities across all roles.",
+    stakeholderStrategy:
+      "Targeted alignment meetings between Product Owner and delivery team. Ensured design and development requirements were properly clarified through structured sprint reviews and refinement sessions.",
+    riskManagement:
+      "Identified communication misalignment as primary delivery risk. Implemented structured ceremonies and alignment checkpoints to stabilize delivery cadence.",
+    tools: ["Jira", "Slack", "Figma", "Confluence"],
+    outcomes: [
+      "Project successfully delivered in line with client's acceptance criteria and definition of done",
+      "All functional and design requirements met",
+      "Delivery stabilized after PO onboarding and alignment process led by Joel",
     ],
   },
 ];

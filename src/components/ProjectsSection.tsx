@@ -2,12 +2,13 @@ import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { projects } from "@/data/portfolio";
 import ProjectModal from "./ProjectModal";
-import { ArrowUpRight, Clock, Users, Layers } from "lucide-react";
+import { ArrowUpRight, Clock, Users, Triangle } from "lucide-react";
 
 const industryColors: Record<string, string> = {
   Technology: "bg-blue-500/10 text-blue-600 border-blue-200",
   "Oil & Energy": "bg-amber-500/10 text-amber-700 border-amber-200",
   Operations: "bg-emerald-500/10 text-emerald-600 border-emerald-200",
+  "Technology / Operations": "bg-violet-500/10 text-violet-600 border-violet-200",
 };
 
 const ProjectsSection = () => {
@@ -61,7 +62,7 @@ const ProjectsSection = () => {
               <div className="flex flex-wrap gap-4 text-xs text-muted-foreground font-body">
                 <span className="flex items-center gap-1.5"><Clock size={13} />{project.duration}</span>
                 <span className="flex items-center gap-1.5"><Users size={13} />{project.teamSize}</span>
-                <span className="flex items-center gap-1.5"><Layers size={13} />{project.deliveryModel}</span>
+                <span className="flex items-center gap-1.5"><Triangle size={13} className="fill-current" />{project.deliveryModel}</span>
               </div>
 
               <div className="mt-6 pt-4 border-t border-border">
