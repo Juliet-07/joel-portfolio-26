@@ -10,7 +10,7 @@ const ContactSection = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // For now, open mailto
-    window.location.href = `mailto:joel@example.com?subject=Project Inquiry from ${formData.name}&body=${encodeURIComponent(formData.message)}`;
+    window.location.href = `mailto:joelxnwachukwu@gmail.com?subject=Project Inquiry from ${formData.name}&body=${encodeURIComponent(formData.message)}`;
   };
 
   return (
@@ -38,9 +38,9 @@ const ContactSection = () => {
             <div className="space-y-4">
               <a href="mailto:joel@example.com" className="flex items-center gap-3 text-primary-foreground/70 hover:text-gold transition-colors font-body text-sm">
                 <Mail size={18} />
-                joel@example.com
+                joelxnwachukwu@gmail.com
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-primary-foreground/70 hover:text-gold transition-colors font-body text-sm">
+              <a href="https://www.linkedin.com/in/joel-nwachukwu/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-primary-foreground/70 hover:text-gold transition-colors font-body text-sm">
                 <Linkedin size={18} />
                 LinkedIn Profile
               </a>

@@ -19,7 +19,7 @@ const CertificationsSection = () => {
             <div className="h-px w-8 bg-gold" />
             <span className="text-gold text-xs font-body font-medium tracking-widest uppercase">Credentials</span>
           </div>
-          <h2 className="font-display text-4xl md:text-5xl text-foreground mb-16">
+          <h2 className="font-display text-4xl md:text-5xl text-foreground mb-6 md:mb-12">
             Certifications
           </h2>
         </motion.div>

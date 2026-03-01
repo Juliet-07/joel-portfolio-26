@@ -20,13 +20,13 @@ const ToolsSection = () => {
             <div className="h-px w-8 bg-gold" />
             <span className="text-gold text-xs font-body font-medium tracking-widest uppercase">Toolkit</span>
           </div>
-          <h2 className="font-display text-4xl md:text-5xl text-foreground mb-16">
+          <h2 className="font-display text-4xl md:text-5xl text-foreground mb-6 md:mb-12">
             Tools & methods
           </h2>
         </motion.div>
 
         {/* Tools */}
-        <div className="grid md:grid-cols-3 gap-8 mb-20">
+        <div className="grid md:grid-cols-3 gap-8 mb-10">
           {categories.map((cat, i) => (
             <motion.div
               key={cat}

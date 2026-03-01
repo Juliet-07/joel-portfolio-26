@@ -14,23 +14,23 @@ const AboutSection = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7 }}
-          className="grid md:grid-cols-2 gap-16 items-start"
+          className="grid md:grid-cols-2 gap-4 md:gap-10 items-start"
         >
           <div>
-            <div className="flex items-center gap-3 mb-4">
+            <div className="flex items-center gap-3 mb-2">
               <div className="h-px w-8 bg-gold" />
               <span className="text-gold text-xs font-body font-medium tracking-widest uppercase">About</span>
             </div>
-            <h2 className="font-display text-4xl md:text-5xl text-foreground mb-6">
+            <h2 className="font-display text-3xl md:text-5xl text-foreground leading-10">
               Engineering mindset,<br />leadership focus
             </h2>
           </div>
 
-          <div className="space-y-6 text-muted-foreground font-body leading-relaxed">
+          <div className="space-y-4 text-muted-foreground font-body leading-relaxed">
             <p>
               With roots in engineering and a career built on leading cross-functional delivery, 
               I bring structure, clarity, and momentum to complex projects. My journey from hands-on 
-              technical work to project leadership gives me a unique perspective — I understand both the 
+              technical work to project leadership gives me a unique perspective. I understand both the 
               challenges teams face and the outcomes stakeholders expect.
             </p>
             <p>
@@ -42,7 +42,7 @@ const AboutSection = () => {
               My focus is always on three things: <span className="text-foreground font-medium">clear communication</span>, 
               <span className="text-foreground font-medium"> stakeholder alignment</span>, and 
               <span className="text-foreground font-medium"> disciplined execution</span>. I believe great 
-              project management is invisible — when it's done right, teams feel empowered, stakeholders 
+              project management is invisible; when it's done right, teams feel empowered, stakeholders 
               feel informed, and results speak for themselves.
             </p>
           </div>
@@ -53,12 +53,12 @@ const AboutSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: 0.3 }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20 pt-16 border-t border-border"
+          className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-10 pt-10 border-t border-border"
         >
           {[
-            { value: "8+", label: "Years Experience" },
+            { value: "6+", label: "Years Experience" },
             { value: "15+", label: "Projects Delivered" },
-            { value: "2", label: "Industries" },
+            { value: "6", label: "Sectors" },
             { value: "100%", label: "On-time Delivery" },
           ].map((stat) => (
             <div key={stat.label} className="text-center md:text-left">

@@ -9,7 +9,7 @@ const HeroSection = () => {
         backgroundImage: "linear-gradient(hsl(38 92% 50%) 1px, transparent 1px), linear-gradient(90deg, hsl(38 92% 50%) 1px, transparent 1px)",
         backgroundSize: "60px 60px"
       }} />
-      
+
       <div className="relative max-w-7xl mx-auto px-6 md:px-12 lg:px-20 pt-28 pb-20 w-full">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -24,16 +24,14 @@ const HeroSection = () => {
             </span>
           </div>
 
-          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl text-primary-foreground leading-[1.05] mb-8">
+          <h1 className="font-display text-4xl md:text-6xl lg:text-8xl text-primary-foreground leading-[1.05] mb-6">
             Delivering results
             <br />
             across <span className="text-gradient-gold">industries</span>
           </h1>
 
-          <p className="text-lg md:text-xl text-primary-foreground/60 font-body font-light leading-relaxed max-w-xl mb-12">
-            I help organizations ship complex projects on time and on budget — 
-            bridging technology, oil & energy, and operations with structured 
-            leadership and agile delivery.
+          <p className="text-base md:text-lg text-primary-foreground/60 font-body font-light leading-relaxed max-w-xl mb-10">
+            I lead complex projects to successful delivery — helping organizations bridge technology, oil & energy, and operations through structured leadership and agile execution.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">

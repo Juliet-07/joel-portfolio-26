@@ -8,7 +8,6 @@ const navLinks = [
   { label: "Skills", href: "#skills" },
   { label: "Tools", href: "#tools" },
   { label: "Industries", href: "#industries" },
-  { label: "Contact", href: "#contact" },
 ];
 
 const Navbar = () => {
@@ -36,7 +35,7 @@ const Navbar = () => {
             href="#contact"
             className="text-sm font-medium bg-gold text-accent-foreground px-5 py-2 rounded-sm hover:bg-gold-light transition-colors"
           >
-            Let's Collaborate
+            Contact
           </a>
         </div>
 
